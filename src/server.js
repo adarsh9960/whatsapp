@@ -23,7 +23,7 @@ app.use(
 
 const { APP_SECRET, PRIVATE_KEY, PASSPHRASE = "", PORT = "3000" } = process.env;
 
-
+/*
 Example:
 ```-----BEGIN RSA PRIVATE KEY-----
 Proc-Type: 4,ENCRYPTED
@@ -55,7 +55,7 @@ D1z9yOxJZ2oPykJ2diuFlb4xZuq09Bl5YSknKS+ZikwgWHS3NGmR1hLPItXV7yR9
 j2S9qPyezSW45ZtOeSvMnnDejNB/Ys3iPlaZUNONB/BRr6zp8IKCvCHYll6GeFNw
 ZdmQnLUGKOQod2w6Un7aPlwbD2j9fo5Mr6oHudgxD0ixtAnnAFtYGg==
 -----END RSA PRIVATE KEY-----```
-
+*/
 
 app.post("/", async (req, res) => {
   if (!PRIVATE_KEY) {
